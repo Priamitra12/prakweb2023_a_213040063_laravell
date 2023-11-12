@@ -25,4 +25,4 @@ class PostFactory extends Factory
             'user_id' => mt_rand(1, 3)
         ];
     }
-}
+} 

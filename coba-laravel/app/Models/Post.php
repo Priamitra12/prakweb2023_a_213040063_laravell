@@ -9,14 +9,7 @@ class Post extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'title', // Judul
-        'category_id', // Kategori
-        'slug',
-        'excerpt',
-        'body',
-    ];
-    protected $quarded = ['id'];
+    protected $fillable = ['title','excerpt','body'];
 
     public function category()
     {
@@ -28,3 +21,4 @@ class Post extends Model
         return $this->belongsTo(User::class, 'user_id');
     }
 }
+ 
